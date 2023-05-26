@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+body {
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(251, 249, 249);
+}
+
+article {
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 2rem;
+    box-shadow: rgb(226, 226, 226) .5rem .5rem 3rem;
+    background-color: white;
+}
+
+@media screen and (max-width: 500px) {
+
+    article .your-result {
+        border-radius: 0rem 0rem 2rem 2rem;
+    }
+  }
+
+.your-result {
+    flex: 1;
+    background: linear-gradient(45deg, hsl(252, 100%, 67%), hsla(256, 72%, 46%, 1));
+    border-radius: 2rem;
+    padding: 2rem;
+    color: hsl(241, 100%, 89%);
+}
+
+.your-result h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    
+}
+
+.your-result div {
+    width: 175px;
+    height: 175px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: hsla(256, 72%, 46%, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: rgb(110, 60, 245) 0 0 0.5rem;
+}
+
+.your-result span {
+    font-size: 60px;
+    display: block;
+    color: white;
+}
+
+.your-result h2 {
+    color: white;
+    margin: 1.5rem 0 1rem 0;
+    font-weight: 500;
+}
+
+.your-result p {
+     margin: 0 2rem;
+}
+
+.summary {
+    flex: 1;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.summary h1 {
+    text-align: left;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.summary .scores {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 14px;
+}
+
+.score-reaction {
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.05);
+}
+
+.score-memory {
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.05);
+}
+
+.score-verbal {
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.05)
+}
+
+.score-visual {
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.05);
+}
+
+.summary .scores-content, .scores-points {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.scores-points {
+    color: rgb(121, 121, 121);
+}
+
+.scores-points span {
+    color: black;
+    font-weight: bold;
+}
+
+.summary button {
+    cursor: pointer;
+    border: none;
+    font-style: bold;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 2rem;
+    color: white;
+    background: hsl(235, 87%, 15%);
+}
+
+.summary button:hover {
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsla(256, 72%, 46%, 1));
+}
+
+
+.attribution {
+    color:rgb(121, 121, 121);
+    padding: 2rem;
+}
+
+.attribution a {
+    text-decoration: none;
+    color:rgb(110, 60, 245);
+}
+
+.attribution a:hover {
+    text-decoration: underline;
+}
